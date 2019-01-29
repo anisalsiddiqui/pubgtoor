@@ -1,0 +1,71 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>PUBG Tournament - Win Exciting Prizes</title>
+			<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+				<link rel='icon' href='img/pubg.png' sizes='48x48'>
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+				<style>
+					* { font-weight: normal; padding: 0; margin: 0; }
+					body { background: url('img/pubgbg.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+					@font-face {
+						font-family: 'Headliner No 45';
+						font-style: normal;
+						font-weight: normal;
+						src: url('HeadlinerNo45.ttf')
+						format('truetype');
+						}
+						.hdn { font-family: 'Headliner No 45'; }
+						.imp { color: #fff; background: #e58d05; padding: 10px; text-align: center; font-size: 2.5em; display: block; }
+						.stroke { -webkit-text-fill-color: transparent; -webkit-text-stroke-width: 2px; }
+						.imp2 { color: rgba(229,141,5,0.7); text-align: center; -webkit-text-fill-color: #fff; -webkit-text-stroke-width: 1px; font-size: 3em; margin: 10px; }
+						#cont { margin: 10px; background: #fff; padding: 15px 20px; border-radius: 20px; line-height: 30px; }
+						p { font-size: 1.2em; margin: 15px 0; border-bottom: 2px dashed #ddd; padding: 0 0 10px 0; }
+						.highl { color: #e58d05; font-size: 1.5em; }
+						#form { text-align: center; }
+						#name, #msg { width: 75%; border: 2px solid #ddd; border-radius: 20px; padding: 10px; outline: 0; text-align: center; margin: 5px 0; }
+						#name { color: #e58d05; }
+						#msg { height: 40px; }
+						#name:hover, #msg:hover { border-color: #e58d05; }
+						.btn { color: #fff; background: #e58d05; border: none; border-radius: 20px; }
+						#link { color: #fff; text-decoration: none; padding: 15px 20px; display: inline-block; cursor: none; }
+						.social-a a:link, .social-a a:hover, .social-a a:visited { color: #e58d05; text-decoration: none; padding: 10px; margin: 10px; }
+						.share { font-size: 1.5em; background: #e58d05; border: 2px solid #e58d05; color: #fff; position: fixed; bottom: 20px; right: 20px; width: 30px; height: 30px; padding: 10px; text-align: center; border-radius: 50%; text-decoration: none; }
+					</style>
+					<script>
+						var i = 0;
+						function send() {
+							var name = document.getElementById('name').value;
+							var msg = document.getElementById('msg').value;
+							var link = document.getElementById('link');
+							if (i == 0) {
+								link.href='https://api.whatsapp.com/send?phone=13177581442&text=Hi I am' + ' ' + '*' + name + '*' + ', and i wanna say that,' + ' ' + '*' + msg + '*' + '. Please add me in your pubg mobile tournament group.';
+								}
+							}
+						</script>
+			</head>
+			<body>
+				<span class='hdn imp'>PUBG Mobile Tournament</span>
+				<br />
+				<h1 class='hdn imp2'>You Are Welcome<br />To Win Here</h1>
+				<div id='cont'>
+					<p class='hdn'>
+						Are you got stucked getting <span class='highl'>winner winner chicken dinner</span> and no extra chill, join us and your <span class='highl'>gameplay</span> will help you to earn some money next <span class='highl'>Tournament</span>.
+						</p>
+						<p class='hdn'>
+							feeling sorry but this <span class='highl'>Tournaments</span> are only for <span class='highl'>Indians</span>. You'll get all information about tournaments, <span class='highl'>prizes and everything</span>, just join our group with <span class='highl'>no cost</span>.
+							</p>
+							<div id='form'>
+								<input type='text' placeholder='Your Name' id='name' class='hdn' required>
+									<textarea placeholder='Message' cols='40' rows='' id='msg' class='hdn'></textarea>
+									<button class='btn' onclick='send()'><a class='hdn' id='link' href=''>Send to Whatsapp</a></button>
+									<div class='social-a'>
+								<a href='https://www.facebook.com/iamska786' class='fab fa-facebook-f'></a>
+								<a href='https://www.twitter.com/iamska786' class='fab fa-twitter'></a>
+								<a href='https://www.instagram.com/iamska786' class='fab fa-instagram'></a>
+								</div>
+								</div>
+					</div>
+					<a href='https://api.whatsapp.com/send?text=*PUBG Mobile Tournament* Join For Free https://pubgtour.cf' class='fas fa-share-alt share'></a>
+				</body>
+				</html>
