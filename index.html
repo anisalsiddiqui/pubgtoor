@@ -28,11 +28,12 @@
 						#name, #msg { width: 75%; border: 2px solid #ddd; border-radius: 20px; padding: 10px; outline: 0; text-align: center; margin: 5px 0; }
 						#name { color: #e58d05; }
 						#msg { height: 40px; }
-						#name:hover, #msg:hover { width: 75%; border-color: #e58d05; }
+						#name:hover, #msg:hover { border-color: #e58d05; }
 						.btn { width: 75%; color: #fff; background: #e58d05; border: none; border-radius: 20px; }
 						#link { color: #fff; text-decoration: none; padding: 15px 20px; display: inline-block; cursor: none; }
 						.social-a a:link, .social-a a:hover, .social-a a:visited { color: #e58d05; text-decoration: none; padding: 10px; margin: 10px; }
 						.share { font-size: 1.5em; background: #e58d05; border: 2px solid #e58d05; color: #fff; position: fixed; bottom: 20px; right: 20px; width: 30px; height: 30px; padding: 10px; text-align: center; border-radius: 50%; text-decoration: none; }
+					@media only screen and (orientation: landscape){ #name, #msg, .btn { width: 50%; }}
 					</style>
 					<script>
 						var i = 0;
